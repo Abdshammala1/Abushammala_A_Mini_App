@@ -1,0 +1,79 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>mini.ca</title>
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link href="css/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="app">
+            <div data-v-08e7016c="" class="body">
+                <nav data-v-08e7016c="" class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a data-v-08e7016c="" href="#" class="navbar-brand"><img data-v-08e7016c="" src="images/logo.86d2629b.png" class="logo" /></a>
+                    <button data-v-08e7016c="" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+                        <span data-v-08e7016c="" class="navbar-toggler-icon"></span>
+                    </button>
+                    <div data-v-08e7016c="" id="navbarSupportedContent" class="collapse navbar-collapse">
+                        <ul data-v-08e7016c="" class="navbar-nav mr-auto">
+                            <li data-v-08e7016c="" class="nav-item dropdown">
+                                <a data-v-08e7016c="" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"> MODELS </a>
+                                <div data-v-08e7016c="" aria-labelledby="navbarDropdown" class="dropdown-menu">
+                                    <a data-v-08e7016c="" href="#" class="dropdown-item">Action</a><a data-v-08e7016c="" href="#" class="dropdown-item">Another action</a>
+                                    <div data-v-08e7016c="" class="dropdown-divider"></div>
+                                    <a data-v-08e7016c="" href="#" class="dropdown-item">Something else here</a>
+                                </div>
+                            </li>
+                            <li data-v-08e7016c="" class="nav-item dropdown">
+                                <a data-v-08e7016c="" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"> SHOPPING TOOLS </a>
+                                <div data-v-08e7016c="" aria-labelledby="navbarDropdown" class="dropdown-menu">
+                                    <a data-v-08e7016c="" href="#" class="dropdown-item">Action</a><a data-v-08e7016c="" href="#" class="dropdown-item">Another action</a>
+                                    <div data-v-08e7016c="" class="dropdown-divider"></div>
+                                    <a data-v-08e7016c="" href="#" class="dropdown-item">Something else here</a>
+                                </div>
+                            </li>
+                            <li data-v-08e7016c="" class="nav-item dropdown">
+                                <a data-v-08e7016c="" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"> DISCOVER </a>
+                                <div data-v-08e7016c="" aria-labelledby="navbarDropdown" class="dropdown-menu">
+                                    <a data-v-08e7016c="" href="#" class="dropdown-item">Action</a><a data-v-08e7016c="" href="#" class="dropdown-item">Another action</a>
+                                    <div data-v-08e7016c="" class="dropdown-divider"></div>
+                                    <a data-v-08e7016c="" href="#" class="dropdown-item">Something else here</a>
+                                </div>
+                            </li>
+                            <li data-v-08e7016c="" class="nav-item dropdown">
+                                <a data-v-08e7016c="" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"> OWNERS </a>
+                                <div data-v-08e7016c="" aria-labelledby="navbarDropdown" class="dropdown-menu">
+                                    <a data-v-08e7016c="" href="#" class="dropdown-item">Action</a><a data-v-08e7016c="" href="#" class="dropdown-item">Another action</a>
+                                    <div data-v-08e7016c="" class="dropdown-divider"></div>
+                                    <a data-v-08e7016c="" href="#" class="dropdown-item">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="videos">
+                <video ref="video" id="video" autoplay="autoplay">
+                    <source id="source" :src="source" type="video/mp4">
+                </video>
+                <div class="row ml-5 mr-5"><img @click="changeVideo('1');" src="images/1.056a670c.jpg" class="col-md-2" /><img @click="changeVideo('2');" src="images/2.e0d7bad8.jpg" class="col-md-2" /><img @click="changeVideo('3');" src="images/3.9347cebc.jpg" class="col-md-2" /></div>
+            </div>
+            <div class="models">
+                <div class="row m-3">
+                    <div class="col-6">
+                        <div class="h3">SELECT YOUR MODEL:</div>
+                        <div><img @click="getItem('1');" src="images/model1.0093b94c.png" class="col-4" /><img @click="getItem('2');" src="images/model2.66c3863f.png" class="col-4" /><img @click="getItem('3');" src="images/model3.671d3b84.png" class="col-4" /></div>
+                    </div>
+                    <div class="col-6">
+                        <div id="title" class="title h3">{{results.title}}</div>
+                        <div id="price" class="price h5 mb-4">{{results.price}}</div>
+                        <div id="description" class="description">{{results.description}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+        <script type="module" src="js/main.js"></script>
+    </body>
+</html>

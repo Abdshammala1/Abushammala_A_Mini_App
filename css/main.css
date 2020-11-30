@@ -1,0 +1,39 @@
+body {
+    background-color: #000 !important;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar[data-v-08e7016c] {
+    background-color: #000 !important;
+  }
+  
+  .logo[data-v-08e7016c] {
+    width: 150px;
+    height: 60px;
+  }
+  
+  img {
+    cursor: pointer;
+  }
+  
+  div {
+    color: #fff;
+  }
+  
+  a[data-v-08e7016c] {
+    color: #fff !important;
+    font-weight: 700;
+  }
+  
+  .videos {
+    text-align: center;
+  }
+  
+  video {
+    width: 80%;
+    outline: none;
+  }
+  
+  /*# sourceMappingURL=master.css.map */
