@@ -9,6 +9,7 @@ used :
 
 HTML
 CSS 
+SASS
 JS
 VUE.JS
 AJAX
